@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      div.dice {
+        float:left;
+        width:32px;
+        background: #F5F5F5;
+        border: #999 1px solid;
+        padding:10px;
+        font-size:24px;
+        text-align:center;
+        margin:5px;
+    }
+    </style>
+    <script>
+        function rollDice() {
+            var die1 = document.getElementById("die1");
+            var die2 = document.getElementById("die2");
+            var die3 = document.getElementById("die3");
+            var die4 = document.getElementById("die4");
+            var die5 = document.getElementById("die5");
+            var d1 = die.rollDice;
+            var d2 = Math.floor(Math.random() * 6) + 1;
+            var d3 = Math.floor(Math.random() * 6) + 1;
+            var d4 = Math.floor(Math.random() * 6) + 1;
+            var d5 = Math.floor(Math.random() * 6) + 1;
+            pdie1.innerHTML = d1;
+            pdie2.innerHTML = d2;
+            pdie3.innerHTML = d3;
+            pdie4.innerHTML = d4;
+            pdie5.innerHTML = d5;
+            
+        }
+    </script>
+    <title></title>
+	<meta charset="utf-8" />
+
+
+
+</head>
+<body>
+    <dice>
+        <!--p = Physical Die-->
+        <div id="pdie1" class="dice">0</div>
+        <div id="pdie2" class="dice">0</div>
+        <div id="pdie3" class="dice">0</div>
+        <div id="pdie4" class="dice">0</div>
+        <div id="pdie5" class="dice">0</div>
+        <button onclick="rollDice()"> Roll Dice</button>
+        <h2 id="Status" style="clear: left;"></h2>
+    </dice>
+    <checkboxes>
+        <!--cb = CheckBox Die-->
+        <h1>Choose what to keep</h1>
+        <input type="checkbox" name="cbDie1" /> Keep Die #1
+        <input type="checkbox" name="cbDie2" /> Keep Die #2
+        <input type="checkbox" name="cbDie3" /> Keep Die #3
+        <input type="checkbox" name="cbDie4" /> Keep Die #4
+        <input type="checkbox" name="cbDie5" /> Keep Die #5
+    </checkboxes>
+</body>
+</html>

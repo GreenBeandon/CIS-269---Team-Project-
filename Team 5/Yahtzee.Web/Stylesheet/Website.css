@@ -1,0 +1,91 @@
+﻿* {
+    max-width: 85%;
+    
+}
+body {
+
+    /*font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;*/
+    
+   
+    background-size: auto;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+div.checkboxes , div.dice {
+    width: 80%;
+    float: left;
+    
+    max-width: 900px;
+    height: 100%;
+}
+h1#Title
+{
+    width: 100%;
+    text-align: center;
+}
+h1#keep {
+    width: 100%;
+    text-align: left;
+    /*text-align: center;*/
+}
+
+div.dice {
+    /*float: left;*/
+    max-width: 80px;
+    background: #F5F5F5;
+    border: #999 1px solid;
+    padding-left: 10px;
+    font-size: 24px;
+    text-align: center;
+    /*margin: 10px;*/
+}
+
+div #splash {
+    text-align: center;
+}
+
+#splash_logo {
+    display: block;
+    margin: auto;
+}
+
+section {
+	width: 50%;
+	float: right;
+	padding: 0 1% 10px 1%;
+    height: 100%;
+    background-color: white;
+}
+
+div #debugText{
+    text-align:left;
+    font-size: 20px;
+}
+
+#footer {
+    
+    position: absolute;
+    text-align: left;
+    bottom: 0;
+    width: 100%;
+    background: #efefef;
+    
+}
+p {
+    float:left;
+}
+
+
+/*TODO*/
+/*
+    Border both Scoreboards align right
+    Center Dice
+    Align Check boxes either on left of Dice or undereach
+    get some color in the back ground
+    make "Shell" around parts of body for better control
+
+*/
